@@ -1,15 +1,86 @@
 <!DOCTYPE html>
-	<html lang="pl-PL">
-	<html>
-		<head>
-			<meta charset="utf-8">
-			<title> </title>
-		</head>
-		<body>
+<html lang="pl-PL">
+	<head>
+		<meta charset="utf-8">
+		<title>Formularz zgłoszeniowy</title>
+	</head>
+	<body bgcolor="green">
 
-<!- Przejście do strony, która będzie zawierać w wyniku późniejszych poleceń formularz. Teraz będzie to napis tutaj będzie formularz oraz link wstecz, czyli przejście do strony głównej. -!>
-<h1>Tutaj będzie formularz </h1>
-<br>
-<A HREF="index.html"> powrót do strony głównej </A> <br>
-		</body>
-	</html>
+		<h1 align="center">Formularz zgłoszeniowy na Ucznia</h1>
+
+		
+		<div style="display: flex; justify-content: space-between;">
+			
+			<div>
+				Imię: <input name="imie" size="20"><br>		
+				Drugie Imię: <input name="drugie_imie" size="20"><br>
+				Nazwisko: <input name="nazwisko" size="20"><br>
+				Email: <input name="email" size="20"><br>
+			</div>
+
+			
+			<div style="text-align: right;">
+				Zajęcia dodatkowe:<br>
+				<input type="radio" name="zajecia" value="Tak" checked> Tak<br>
+				<input type="radio" name="zajecia" value="Nie"> Nie<br><br>
+				
+			<div style="text-align: right;">
+				Na jakie dodaktowe zajęcia chcesz chodzić :<br>
+				<input type="checkbox" name="transport" value="rel"> Religia <br>
+				<input type="checkbox" name="transport" value="Etyk"> Etyka<br>
+				<input type="checkbox" name="transport" value="dodje"> Dodatkowy język<br>
+				<input type="checkbox" name="transport" value="Eskaesy"> Eskaesy<br>
+				<input type="checkbox" name="transport" value="Inne"> Inne
+			</div>
+			
+				Dodatkowe informacje o mnie:<br>
+				<textarea name="o_sobie" rows="4" cols="25"></textarea><br><br>
+			</div>
+
+		</div>
+		<p>
+			Miasto: 
+			<select name="miasto">
+				<option value="Gdańsk">Gdańsk</option>
+				<option value="Gdynia">Gdynia</option>
+				<option value="Sopot">Sopot</option>
+				<option value="Tczew">Tczew</option>
+				<option value="Inne miasto">Inne miasto</option>
+			</select>
+		</p>
+
+		<p>
+			Województwo: 
+			<select name="Województwo">
+				<option value="Pomorskie">Pomorskie</option>
+				<option value="Zachodnio pomorskie">Zachodniopomorskie</option>
+				<option value="Mazowieckie">Mazowieckie</option>
+				<option value="Łódzkie">Łódzkie</option>
+				<option value="Inne województwo">Inne województwo</option>
+			</select>
+		</p>
+
+		<p>
+			Transport do szkoły:<br>
+			<input type="checkbox" name="transport" value="autob"> autobus <br>
+			<input type="checkbox" name="transport" value="tran"> Tramwaj <br>
+			<input type="checkbox" name="transport" value="auto"> auto <br>
+			<input type="checkbox" name="transport" value="Nogami"> Pieszo <br>
+			<input type="checkbox" name="transport" value="Inne"> Inne
+		</p>
+		<div>
+   <div>
+  0% ------ 50% ----- 100%<br>
+  <input type="range" min="0" max="100" value="50" style="accent-color: yellow;">
+</div>
+<div style="display: flex; justify-content: space-between; margin-top: 20px;">
+    <button type="button" style="flex: 1; margin: 0 5px; height: 50px; font-size: 18px; cursor: pointer;">zapisz</button>
+    <button type="submit" style="flex: 1; margin: 0 5px; height: 50px; font-size: 18px; cursor: pointer;">wyślij</button>
+    <button type="reset" style="flex: 1; margin: 0 5px; height: 50px; font-size: 18px; cursor: pointer;">wyczyść</button>
+</div>
+		
+
+		<br><br>
+		<a href="index.html"> powrót do strony głównej </a>
+	</body>
+</html>
